@@ -35,13 +35,7 @@ export default function Projects() {
       tech: ["React", "JavaScript"],
       link: "https://github.com/anusb412/ToDoList",
     },
-    {
-      title: "React Authentication System",
-      img: Auth1,
-      description: "Full auth flow with Node, Express & MongoDB backend.",
-      tech: ["React", "Node", "Express", "MongoDB"],
-      link: "https://github.com/anusb412/Auth",
-    },
+    
     {
       title: "Kneaders Website Clone",
       img: KNEADERS,
@@ -58,7 +52,7 @@ export default function Projects() {
         {/* HEADER */}
         <header className="text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+          <p className="max-w-2xl mx-auto text-xl">
             A curated selection of my best work showcasing real-world UI, UX,
             and frontend engineering skills.
           </p>
@@ -98,7 +92,7 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block pt-4 text-indigo-400 hover:text-indigo-300 transition font-medium"
+                  className="inline-block pt-4 text-indigo-400 hover:text-indigo-300 transition font-medium animate-pulse"
                 >
                   View on GitHub →
                 </a>

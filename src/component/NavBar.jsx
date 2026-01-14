@@ -11,7 +11,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <div className="text-xl font-extrabold tracking-tight">
-            <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
               Anthony
             </span>
           </div>
