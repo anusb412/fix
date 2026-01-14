@@ -14,69 +14,51 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-slate-900 text-white">
-      <div className="mx-auto max-w-6xl px-6 py-24 space-y-24">
-
+    <main>
+      <div
+        className="flex flex-col gap-6max-w-3xl mx-auto bg-slate-800 p-8 hover:bg-slate-700 transition-colors font-mono"
+      >
         {/* HERO SECTION */}
-        <section className="text-center space-y-6 md:space-y-8">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Hi, I’m <span className="text-indigo-400">Anthony</span> 👋
+        <section>
+          <h1 className="font-mono ">
+            Hi, I’m <span>Anthony</span> 👋
           </h1>
 
-          <p className="max-w-2xl mx-auto text-lg text-slate-300">
-            Frontend developer specializing in clean, responsive, high-performance
-            React applications that look great and convert users.
+          <p>
+            Frontend developer specializing in clean, responsive,
+            high-performance React applications that look great and convert
+            users.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
-            <Link
-              to="/projects"
-              className="px-8 py-3 rounded-lg bg-indigo-500 hover:bg-indigo-400 transition-colors font-semibold"
-            >
-              View Projects
-            </Link>
+          <div>
+            <Link to="/projects" className="bg-blue-50 text-blue-600 hover:bg-blue-100">View Projects</Link>
 
-            <Link
-              to="/contact"
-              className="px-8 py-3 rounded-lg border border-slate-700 hover:bg-slate-800 transition-colors"
-            >
-              Contact Me
-            </Link>
+            <Link to="/contact" className="bg-blue-50 text-blue-600 hover:bg-blue-100">Contact Me</Link>
           </div>
         </section>
 
         {/* SKILLS SECTION */}
-        <section className="space-y-8">
-          <h2 className="text-3xl font-bold text-center">Core Skills</h2>
+        <section>
+          <h2>Core Skills</h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <div>
             {skills.map((skill) => (
-              <div
-                key={skill}
-                className="rounded-lg border border-slate-700 bg-slate-800 py-3 text-center text-sm hover:border-indigo-500 hover:text-indigo-400 transition-colors"
-              >
-                {skill}
-              </div>
+              <div key={skill}>{skill}</div>
             ))}
           </div>
         </section>
 
         {/* ABOUT PREVIEW */}
-        <section className="rounded-2xl border border-slate-700 bg-slate-800 p-10 text-center space-y-6">
-          <h2 className="text-3xl font-bold">About Me</h2>
+        <section>
+          <h2>About Me</h2>
 
-          <p className="max-w-2xl mx-auto text-slate-300">
+          <p>
             I build modern web applications with a focus on performance,
             accessibility, and clean UI. I turn ideas into polished,
             conversion-focused digital experiences.
           </p>
 
-          <Link
-            to="/about"
-            className="inline-block text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
-          >
-            Learn More →
-          </Link>
+          <Link to="/about">Learn More →</Link>
         </section>
       </div>
     </main>
