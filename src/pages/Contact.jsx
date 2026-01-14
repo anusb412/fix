@@ -10,7 +10,7 @@ export default function Contact() {
           <h1 className="text-4xl md:text-5xl font-bold">Contact Me</h1>
           <p className="text-slate-300 text-lg">
             I'd love to hear from you! Whether it's a project idea, a job opportunity,
-            or just a chat—reach out anytime.
+            or just a chat! Reach out anytime.
           </p>
 
           <div className="mt-4 space-y-2 text-slate-400">
@@ -32,7 +32,6 @@ export default function Contact() {
                 Email: anusb412@gmail.com
               </a>
             </p>
-            <p>Volcon: Coming Soon 🚀</p>
           </div>
         </section>
 

@@ -4,62 +4,85 @@ export default function Home() {
   const skills = [
     "React",
     "JavaScript",
-    "HTML/CSS",
+    "HTML / CSS",
     "Tailwind CSS",
     "Bootstrap",
     "Node.js",
-    "UI/UX",
+    "UI / UX",
     "APIs",
     "Responsive Design",
   ];
 
   return (
-    <main>
-      <div
-        className="flex flex-col gap-6max-w-3xl mx-auto bg-slate-800 p-8 hover:bg-slate-700 transition-colors font-mono"
-      >
-        {/* HERO SECTION */}
-        <section>
-          <h1 className="font-mono ">
-            Hi, I’m <span>Anthony</span> 👋
+    <main className="min-h-screen bg-slate-900 text-white">
+      <div className="max-w-6xl mx-auto px-4 py-12 space-y-24">
+
+        {/* HERO */}
+        <section className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 md:p-16 text-center space-y-6 shadow-xl">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Hi, I’m{" "}
+            <span className="bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-transparent">
+              Anthony
+            </span>{" "}
+            👋
           </h1>
 
-          <p>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             Frontend developer specializing in clean, responsive,
-            high-performance React applications that look great and convert
-            users.
+            high-performance React applications that look great and convert users.
           </p>
 
-          <div>
-            <Link to="/projects" className="bg-blue-50 text-blue-600 hover:bg-blue-100">View Projects</Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 pt-6">
+            <Link
+              to="/projects"
+              className="px-8 py-3 rounded-xl font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-900 transition"
+            >
+              View Projects
+            </Link>
 
-            <Link to="/contact" className="bg-blue-50 text-blue-600 hover:bg-blue-100">Contact Me</Link>
+            <Link
+              to="/contact"
+              className="px-8 py-3 rounded-xl font-semibold border border-slate-600 hover:border-violet-400 hover:text-violet-400 transition"
+            >
+              Contact Me
+            </Link>
           </div>
         </section>
 
-        {/* SKILLS SECTION */}
-        <section>
-          <h2>Core Skills</h2>
+        {/* SKILLS */}
+        <section className="space-y-10">
+          <h2 className="text-3xl font-bold text-center">Core Skills</h2>
 
-          <div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {skills.map((skill) => (
-              <div key={skill}>{skill}</div>
+              <div
+                key={skill}
+                className="rounded-xl border border-slate-700 bg-slate-800/60 px-4 py-6 text-center text-slate-300 font-medium hover:border-cyan-400 hover:text-cyan-400 transition"
+              >
+                {skill}
+              </div>
             ))}
           </div>
         </section>
 
         {/* ABOUT PREVIEW */}
-        <section>
-          <h2>About Me</h2>
+        <section className="bg-slate-800/60 rounded-3xl p-8 md:p-14 text-center space-y-6">
+          <h2 className="text-3xl font-bold">About Me</h2>
 
-          <p>
+          <p className="text-slate-400 max-w-3xl mx-auto text-lg">
             I build modern web applications with a focus on performance,
             accessibility, and clean UI. I turn ideas into polished,
             conversion-focused digital experiences.
           </p>
 
-          <Link to="/about">Learn More →</Link>
+          <Link
+            to="/about"
+            className="inline-block text-cyan-400 hover:text-violet-400 font-semibold transition"
+          >
+            Learn More →
+          </Link>
         </section>
+
       </div>
     </main>
   );
