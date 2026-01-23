@@ -11,6 +11,8 @@ export default function Home() {
     "UI / UX",
     "APIs",
     "Responsive Design",
+    "THREE.JS",
+    "React-THREE-Fiber"
   ];
 
   return (

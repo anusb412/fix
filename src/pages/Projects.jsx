@@ -4,9 +4,17 @@ import KNEADERS from "../assets/kneaders_portfolio.png";
 import COUNTER from "../assets/LetterCounterApp.png";
 import QR from "../assets/QR.png";
 import LANDING1 from "../assets/wb1.png";
+import SOLARSYSTEM from '../assets/SolarSystem.png'
 
 export default function Projects() {
   const projectList = [
+    {
+      title: "R3F Solar System - Animated",
+      img: SOLARSYSTEM,
+      description:'Solar System of all 9 planets rotating around the Sun.',
+      tech: ["HTML", "CSS", "React-THREE-Fiber"],
+      link: "https://github.com/anusb412/R3F"
+    },
     {
       title: "QR Code Component",
       img: QR,

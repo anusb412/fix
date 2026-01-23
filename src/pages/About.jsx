@@ -93,6 +93,8 @@ export default function About() {
                 "Git & GitHub",
                 "Firebase",
                 "MongoDB",
+                "THREE.JS",
+                "React-THREE-Fiber"
               ].map((skill) => (
                 <span
                   key={skill}
